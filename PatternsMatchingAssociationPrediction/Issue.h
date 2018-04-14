@@ -1,6 +1,15 @@
 #pragma once
 #include <string> // Needed in header for the String variable.
 using namespace std; // Needed in header for the String variable.
+
+/**
+Issue Class is used to create an Issue object
+that represents an Issue Pattern. The Issue Pattern
+will be compared with to see if that specific Issue
+is occurring.
+Created By: Clayton D. Terrill and Ian Barney
+April 14th, 2018.
+*/
 class Issue
 {
 public:

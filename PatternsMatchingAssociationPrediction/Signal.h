@@ -1,4 +1,5 @@
 #pragma once
+
 /**
 Signal Class is used to create a Signal object
 that monitors signals being recieved. The Signal

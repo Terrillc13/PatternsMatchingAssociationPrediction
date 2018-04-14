@@ -6,6 +6,7 @@ is occurring.
 Created By: Clayton D. Terrill and Ian Barney
 April 14th, 2018.
 */
+
 #include "stdafx.h"
 #include "Issue.h"
 using namespace std;

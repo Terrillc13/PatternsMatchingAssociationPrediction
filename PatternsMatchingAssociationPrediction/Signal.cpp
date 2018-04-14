@@ -7,6 +7,7 @@ an abnormality or not.
 Created By: Clayton D. Terrill and Ian Barney
 April 14th, 2018.
 */
+
 #include "stdafx.h"
 #include "Signal.h"
 #include <string>
