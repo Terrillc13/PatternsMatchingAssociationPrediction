@@ -27,6 +27,9 @@
     <ClInclude Include="Issue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Seizure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -39,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Issue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Seizure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
