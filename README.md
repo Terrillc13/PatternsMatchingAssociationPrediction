@@ -14,7 +14,7 @@ There are five signals being received and monitored. Each signal carries whether
 - The due date is April 17th, 2018.
 
 ### Team Members
-- Clayton Terrill	- Requirements and Group Leader	Active \n
+- Clayton Terrill	- Requirements and Group Leader	Active
 - Elliot Fries - Analysis - Active
 - James Languirand - Design - Active
 - Ian Barney - Implementation - Active
