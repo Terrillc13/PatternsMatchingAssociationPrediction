@@ -1,18 +1,20 @@
 #pragma once
 /**
-Signal Class is used to create a Tree with the organization of it dependent on it's key.
-The value of the node is associated with this key.
-This class uses utility functions from SignalNode.
-Created By: Clayton D. Terrill
-March 22nd, 2017.
+Signal Class is used to create a Signal object
+that monitors signals being recieved. The Signal
+object's isAbnormal Boolean value will be constantly
+changed to represent if the Signals are producing
+an abnormality or not.
+Created By: Clayton D. Terrill and Ian Barney
+April 14th, 2018.
 */
 class Signal
 {
 public:
-	/*The variables used in this class.*/
+	/* The variables used in this class. */
 	bool isAbnormal; // Boolean value that shows if signal is abnormal or not.
 
-					 /*The function signatures for this class.*/
+	/* The function signatures for this class. */
 	Signal();
 	Signal(bool);
 	~Signal();

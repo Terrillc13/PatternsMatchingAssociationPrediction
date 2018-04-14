@@ -1,10 +1,19 @@
+/**
+Signal Class is used to create a Signal object
+that monitors signals being recieved. The Signal
+object's isAbnormal Boolean value will be constantly
+changed to represent if the Signals are producing
+an abnormality or not.
+Created By: Clayton D. Terrill and Ian Barney
+April 14th, 2018.
+*/
 #include "stdafx.h"
 #include "Signal.h"
 #include <string>
 using namespace std;
 
 /**
-Function: Signal()
+Function: Signal
 Default Constructor of the Signal.
 Initializes the isAbnormal to be NULL.
 */
@@ -14,7 +23,7 @@ Signal::Signal()
 }
 
 /**
-Function: Signal()
+Function: Signal
 Constructor for when a value has been designated during Signal object creation.
 Initializes the isAbnormal to be NULL.
 @param isAbnormalTemp - Boolean value to set isAbnormal with.
@@ -25,7 +34,7 @@ Signal::Signal(bool isAbnormalTemp)
 }
 
 /**
-Function: ~Signal()
+Function: ~Signal
 Default Destructor that deletes the Signal. Prevents Memory Leak.
 */
 Signal::~Signal()
