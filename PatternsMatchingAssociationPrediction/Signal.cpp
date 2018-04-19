@@ -16,7 +16,7 @@ using namespace std;
 /**
 Function: Signal
 Default Constructor of the Signal.
-Initializes the isAbnormal to be NULL.
+Initializes the isAbnormal to be false.
 */
 Signal::Signal()
 {
@@ -26,7 +26,7 @@ Signal::Signal()
 /**
 Function: Signal
 Constructor for when a value has been designated during Signal object creation.
-Initializes the isAbnormal to be NULL.
+Sets the isAbnormal.
 @param isAbnormalTemp - Boolean value to set isAbnormal with.
 */
 Signal::Signal(bool isAbnormalTemp)
@@ -40,7 +40,6 @@ Default Destructor that deletes the Signal. Prevents Memory Leak.
 */
 Signal::~Signal()
 {
-	//delete this->isAbnormal) //Deletes the pointer.
 }
 
 /**

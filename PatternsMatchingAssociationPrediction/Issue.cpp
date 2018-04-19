@@ -42,15 +42,9 @@ Sets the message.
 */
 Issue::Issue(bool* patternTemp, string messageTemp)
 {
-	// Set the size of the pattern array to the size of the array being passed in.
-	pattern = new bool[sizeof(patternTemp)];
-
-	// Initialize the pattern to  be all true.
-	for (int i = 0; i <= sizeof(patternTemp); i++)
-	{
-		this->pattern[i] = true;
-	}
-	this->message = messageTemp;
+	// Calling set functions allow for only one method to need modified.
+	this->setPattern(patternTemp);
+	this->setMessage(message);
 }
 
 /**
@@ -59,7 +53,6 @@ Default Destructor that deletes the Issue. Prevents Memory Leak.
 */
 Issue::~Issue()
 {
-	//delete[] pattern;
 }
 
 /**
