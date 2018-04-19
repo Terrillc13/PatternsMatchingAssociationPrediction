@@ -4,47 +4,34 @@ that represents an Issue Pattern. The Issue Pattern
 will be compared with to see if that specific Issue
 is occurring.
 Created By: Clayton D. Terrill and Ian Barney
-April 14th, 2018.
+April 10th, 2018.
 */
 
 #include "stdafx.h"
 #include "Issue.h"
+#include <iostream>
 using namespace std;
 
 /**
 Function: Issue
 Default Constructor of the Issue.
-Initialize the size of the boolean array to 5.
 Initializes the pattern to be all true.
 Initializes the message as 'Detected an Issue'.
 */
 Issue::Issue()
 {
-	// Use 5 as the default size of the pattern array.
-	pattern = new bool[5];
-
 	// Initialize the pattern to  be all true.
-	for (int i = 0; i <= sizeof(pattern); i++)
-	{
+	for (int i = 0; i < 5; i++) {
 		this->pattern[i] = true;
 	}
 	this->message = "Detected an Issue";
 }
 
-/**
-Function: Issue
-Constructor for when a boolean array and message has been 
-designated during the Issue object creation.
-Sets the pattern array.
-Sets the message.
-@param patternTemp - The array to set the pattern array with.
-@param messageTemp - String value that contains the Issue.
-*/
-Issue::Issue(bool* patternTemp, string messageTemp)
+Issue::Issue(string message, bool pattern[])
 {
 	// Calling set functions allow for only one method to need modified.
-	this->setPattern(patternTemp);
 	this->setMessage(message);
+	this->setPattern(pattern);
 }
 
 /**
@@ -56,32 +43,26 @@ Issue::~Issue()
 }
 
 /**
-Function: setPattern
-Sets the pattern array.
-@param patternTemp - The array to set the pattern array with.
+Function: setMessage
+Sets the message variable with a String value.
+@param message - String value that contains the Issue.
 */
-void Issue::setPattern(bool* patternTemp)
+void Issue::setMessage(string message)
 {
-	// Set the size of the pattern array to the size of the array being passed in.
-	pattern = new bool[sizeof(patternTemp)];
-
-	// Initialize the pattern to  be all true.
-	for (int i = 0; i <= sizeof(patternTemp); i++)
-	{
-		this->pattern[i] = patternTemp[i];
-	}
+	this->message = message;
 }
 
 /**
-Function: setMessage
-Sets the message variable with a String value.
-@param messageTemp - String value that contains the Issue.
+Function: setPattern
+Sets the pattern array.
+@param pattern - The array to set the pattern array with.
 */
-void Issue::setMessage(string messageTemp)
+void Issue::setPattern(bool pattern[])
 {
-	this->message = messageTemp;
+	for (int i = 0; i < 5; i++) {
+		this->pattern[i] = pattern[i];
+	}
 }
-
 
 /**
 Function: getPattern
@@ -90,7 +71,7 @@ Returns Issue Pattern.
 */
 bool* Issue::getPattern()
 {
-	return this->pattern;
+	return pattern;
 }
 
 /**
@@ -98,7 +79,6 @@ Function: getMessage
 Returns the Issue message.
 @return string - String containing the Issue message.
 */
-string Issue::getMessage()
-{
+string Issue::getMessage() {
 	return this->message;
 }

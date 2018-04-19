@@ -27,7 +27,7 @@
     <ClInclude Include="Issue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Seizure.h">
+    <ClInclude Include="Patient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,7 +44,7 @@
     <ClCompile Include="Issue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Seizure.cpp">
+    <ClCompile Include="Patient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

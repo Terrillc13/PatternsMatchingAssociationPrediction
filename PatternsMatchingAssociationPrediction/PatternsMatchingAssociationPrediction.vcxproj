@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Issue.h" />
-    <ClInclude Include="Seizure.h" />
+    <ClInclude Include="Patient.h" />
     <ClInclude Include="Signal.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -156,7 +156,7 @@
   <ItemGroup>
     <ClCompile Include="Issue.cpp" />
     <ClCompile Include="PatternsMatchingAssociationPrediction.cpp" />
-    <ClCompile Include="Seizure.cpp" />
+    <ClCompile Include="Patient.cpp" />
     <ClCompile Include="Signal.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

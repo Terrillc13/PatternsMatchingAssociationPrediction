@@ -1,25 +1,15 @@
 #pragma once
-
-/**
-Signal Class is used to create a Signal object
-that monitors signals being recieved. The Signal
-object's isAbnormal Boolean value will be constantly
-changed to represent if the Signals are producing
-an abnormality or not.
-Created By: Clayton D. Terrill and Ian Barney
-April 14th, 2018.
-*/
 class Signal
 {
-public:
 	/* The variables used in this class. */
-	bool isAbnormal; // Boolean value that shows if signal is abnormal or not.
+	int frequency; // Integer value that represents incoming frequency.
+public:
 
 	/* The function signatures for this class. */
 	Signal();
-	Signal(bool);
+	Signal(int);
 	~Signal();
-	void setIsAbnormal(bool);
-	bool getIsAbnormal();
+	void setFrequency(int);
+	int getFrequency();
 };
 

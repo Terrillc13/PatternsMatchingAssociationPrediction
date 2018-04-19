@@ -1,37 +1,35 @@
 /**
 Signal Class is used to create a Signal object
 that monitors signals being recieved. The Signal
-object's isAbnormal Boolean value will be constantly
-changed to represent if the Signals are producing
-an abnormality or not.
+object's Integer value will be constantly
+changed to represent if the Signals frequency.
 Created By: Clayton D. Terrill and Ian Barney
-April 14th, 2018.
+April 10th, 2018.
 */
 
 #include "stdafx.h"
 #include "Signal.h"
-#include <string>
-using namespace std;
 
 /**
 Function: Signal
 Default Constructor of the Signal.
-Initializes the isAbnormal to be false.
+Initializes the frequency to be 0.
 */
 Signal::Signal()
 {
-	this->isAbnormal = false; // It is unknown if the signal is abnormal or not.
+	this->frequency = 0; // Assume 0.
 }
 
 /**
 Function: Signal
 Constructor for when a value has been designated during Signal object creation.
-Sets the isAbnormal.
+Sets the frequency.
 @param isAbnormalTemp - Boolean value to set isAbnormal with.
 */
-Signal::Signal(bool isAbnormalTemp)
+Signal::Signal(int frequency)
 {
-	this->isAbnormal = isAbnormalTemp; // A value has been designated during object creation.
+	// Calling set function allows for only one method to need modified.
+	this->setFrequency(frequency);
 }
 
 /**
@@ -43,21 +41,21 @@ Signal::~Signal()
 }
 
 /**
-Function: setIsAbnormal
-Sets the isAbnormal variable with a boolean value.
-@param isAbnormalTemp - Boolean value to set isAbnormal with.
+Function: setFrequency
+Sets the frequency variable with an Integer value.
+@param frequency - Integer value to set frequency with.
 */
-void Signal::setIsAbnormal(bool isAbnormalTemp)
+void Signal::setFrequency(int frequency)
 {
-	this->isAbnormal = isAbnormalTemp;
+	this->frequency = frequency;
 }
 
 /**
-Function: getIsAbnormal
-Returns whether a signal is abnormal or not.
-@return isAbnormal - Boolean value that shows if signal is abnormal or not.
+Function: getFrequency
+Returns the frequency of the Signal.
+@return frequency - Integer value to for the frequency.
 */
-bool Signal::getIsAbnormal()
+int Signal::getFrequency()
 {
-	return this->isAbnormal;
+	return frequency;
 }
